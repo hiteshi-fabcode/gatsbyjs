@@ -35,3 +35,9 @@
 .aboutbg {
     background-color: rgb(168, 112, 38);
 }
+
+.blogdata {
+    height: 300px;
+    width: 300px;
+    background-color: aliceblue;
+}
