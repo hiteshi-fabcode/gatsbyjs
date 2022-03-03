@@ -1,20 +1,32 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import {header,
-        navtitle,
-        pagelayout
-    } from '../components/header.module.css';
+import { useStaticQuery, graphql} from 'gatsby';
+
+import * as style from '../components/header.module.css';
 
 
-const HeaderLayout = ({pageTitle, children, className}) => {
+const HeaderLayout = ({pageTitle, children}) => {
+
+    const data = useStaticQuery(graphql`
+        query {
+            site {
+                siteMetadata {
+                    title
+                }
+            }
+        }
+    `)
+    console.log(data);
     return(
-        <div className={className}>
-            <title>{pageTitle}</title>
-            <div className={header}>
-                <Link to='/' className={navtitle}>Home</Link>
-                <Link to='/about' className={navtitle}>About</Link>
+        <div className={style.container}>
+            
+            <title>{data.site.siteMetadata.title} | {pageTitle}</title>
+            <div className={style.header}>
+                <Link to='/' className={style.navtitle}>Home</Link>
+                <Link to='/about' className={style.navtitle}>About</Link>
+                <Link to='/blog' className={style.navtitle}>Blog</Link>
             </div>
-            <main className={pagelayout}>
+            <main className={style.pagelayout}>
                 <h1>{pageTitle}</h1>
                 {children}
             </main>
