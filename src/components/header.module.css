@@ -1,0 +1,36 @@
+.container {
+    background-color: beige;
+}
+
+.header {
+    display: flex;
+    height: 70px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    justify-content: end;
+    align-items: flex-end;
+}
+
+.navtitle{
+    color: rgb(255, 255, 255);
+    padding-inline: 20px;
+    padding-bottom: 10px;
+    font-size: large;
+}
+
+.navtitle:hover {
+    color: red;
+}
+
+.pagelayout {
+    display: flex;
+    flex-direction: column;
+}
+
+.homebg {
+    background-color: aquamarine;
+}
+
+.aboutbg {
+    background-color: rgb(168, 112, 38);
+}
