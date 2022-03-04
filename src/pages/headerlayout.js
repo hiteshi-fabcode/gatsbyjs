@@ -16,7 +16,7 @@ const HeaderLayout = ({pageTitle, children}) => {
             }
         }
     `)
-    console.log(data);
+    // console.log(data);
     return(
         <div className={style.container}>
             
