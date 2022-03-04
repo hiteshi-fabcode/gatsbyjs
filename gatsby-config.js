@@ -1,3 +1,5 @@
+require("dotenv").config()
+// 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
 module.exports = {
     siteMetadata: {
         siteUrl: `https://www.yourdomain.tld`,
@@ -14,5 +16,12 @@ module.exports = {
             }
         },
         "gatsby-plugin-mdx",
+        {
+            resolve: "gatsby-source-shopify",
+            options: {
+                password: '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',
+                storeUrl: 'hiteshitestapp.myshopify.com',
+            },
+        }
     ]
 }

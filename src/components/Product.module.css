@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    columns: 2;
+}
+
+.cardlayout {
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    width: 300;
+    justify-content: space-between;
+    padding: 10px;
+    border-width: 10px;
+    border: 1px solid rgb(82, 41, 41);
+}
+
+.productimage {
+    height: 200px;
+    width: 200px;
+    align-self: center;
+}
+
+.desc {
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    padding-inline: 20px;
+}
+
+.title {
+    color: blue;
+}

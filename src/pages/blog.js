@@ -6,12 +6,11 @@ import HeaderLayout from './headerlayout';
 import * as style from '../components/header.module.css';
 
 const BlogPage = ({data}) => {
-
     return(
         <HeaderLayout pageTitle='Blog'>
             {
-                data.allMdx.nodes.map(node => (
-                    <article>
+                data.allMdx.nodes.map((node, i) => (
+                    <article key={i} className={style.blogdata}>
                         <h2>{node.frontmatter.title}</h2>
                         <p>Posted: {node.frontmatter.date}</p>
                         <MDXRenderer>
