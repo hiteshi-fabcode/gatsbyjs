@@ -1,6 +1,6 @@
 import * as React from "react";
 import HeaderLayout from "./headerlayout"
-import {aboutbg} from '../components/header.module.css';
+import {aboutbg} from '../styles/header.module.css';
 
 
 const AboutPage = () => {

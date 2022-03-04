@@ -3,7 +3,7 @@ import { graphql } from 'gatsby';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import HeaderLayout from './headerlayout';
 
-import * as style from '../components/header.module.css';
+import * as style from '../styles/header.module.css';
 
 const BlogPage = ({data}) => {
     return(

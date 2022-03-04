@@ -2,7 +2,7 @@ import * as React from "react"
 import {StaticImage} from 'gatsby-plugin-image'
 import HeaderLayout from "./headerlayout"
 
-import {homebg} from '../components/header.module.css';
+import {homebg} from '../styles/header.module.css';
 
 
 const IndexPage = () => {
